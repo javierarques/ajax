@@ -54,21 +54,21 @@
           if ( data.response_type === 'html') {
             ///$('body').prepend('<h1>HTML response<h1>');
             $('#main').append(result);
-            return;
           } else {   
             //$('body').prepend('<h1>JSON response<h1>');         
             var source = jQuery('#post-template').html(),
             template = Handlebars.templates['post'],
             html = '';
 
-            console.log(result);
+            //console.log(result);
+
             var htmlArray=[];
 
             $.each( result, function () {
               htmlArray.push( template ( this ) );
             });
 
-            console.log(htmlArray);
+            //console.log(htmlArray);
             $('#main').append(htmlArray.join(''));
 
           }
