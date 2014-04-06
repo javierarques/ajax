@@ -1,0 +1,45 @@
+/*
+Theme Name: AJAX test
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+*{
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+img {
+
+
+	width: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+#main{
+	width: 90%;
+	max-width: 480px;
+	margin: 0 auto;
+}
+
+article{
+
+	padding: 30px;
+	background: #CCC;
+	color: #333;
+	text-align: center;
+	font-family: 'Open Sans';
+	margin-top: 30px;
+
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both; 
+	-webkit-animation-name: fadeIn; 
+	animation-name: fadeIn;
+}
